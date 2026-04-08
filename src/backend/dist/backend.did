@@ -1,0 +1,14 @@
+type Product = 
+ record {
+   amazonUrl: text;
+   description: text;
+   id: nat;
+   imageUrl: text;
+   name: text;
+   price: float64;
+   sizes: vec text;
+ };
+service : {
+  getAllProducts: () -> (vec Product) query;
+  getProduct: (id: nat) -> (Product) query;
+}

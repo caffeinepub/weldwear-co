@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { useState } from "react";
-import type { Product } from "../backend.d";
+import type { Product } from "../hooks/useQueries";
 
 interface ProductCardProps {
   product: Product;
